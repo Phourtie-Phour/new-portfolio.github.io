@@ -1,0 +1,835 @@
+@font-face {
+    font-family: "Railroad Gothic CC Bold";
+    src: url(../fonts/railroad-gothic-cc/RailroadGothicCC.ttf);
+}
+
+@font-face {
+    font-family: "Expressway Rg";
+    src: url(../fonts/expressway-free/expressway\ rg.otf);
+}
+
+@font-face {
+    font-family: "Big Shoulders Display Black";
+    src: url(../fonts/big-shoulders-display/BigShouldersDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: "Medodica";
+    src: url(../fonts/medodica/MedodicaRegular.otf);
+}
+
+@font-face {
+    font-family: "Velekom";
+    src: url(../fonts/velekom/Velekom.ttf);
+}
+
+@font-face {
+    font-family: "Good Timing";
+    src: url(../fonts/good-timing/good\ timing\ bd.otf);
+}
+
+@font-face {
+    font-family: "Xirod";
+    src: url(../fonts/xirod/Xirod.otf);
+}
+
+@font-face {
+    font-family: "SF Distant Galaxy Alternate";
+    src: url(../fonts/sf-distant-galaxy/TrueTypeSFDistantGalaxyAlternate-It.ttf);
+}
+
+/* ベーススタイル */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black; /* 予備の背景色 */
+    font-size:26px;
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+a {
+    color: #00c8ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+nav{
+    width:100%;
+    transition: all 0.3s ease;
+ }
+ h1{
+    text-align: center;
+    font-family: "Xirod";
+ }
+ 
+ h1,h3{
+    color:rgb(255, 0, 72);
+    text-shadow:5px 5px #ff00557c;
+    
+ }
+
+ h3{
+    margin:10px 0;
+    font-size:52px;
+ }
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 0px;
+
+    bottom: 0;
+    z-index: -2;
+}
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black; /* 予備の背景色 */
+}
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+a {
+    color: #00c8ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* レイアウト */
+header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+main section {
+    margin-bottom: 40px;
+}
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+}
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.campaign{
+background-color: rgb(240, 255, 250);
+border:1px black solid;
+width:100%;
+height: 400px;
+padding: 60px;
+background-size: 100% 100%;
+animation: changeimage 7s ease infinite;
+}
+@keyframes changeimage{
+0%{background-image: url("flavor/ice&people/pexels-polina-tankilevitch-8217384.jpg");}
+50%{background-image: url("flavor/ice&people/pexels-cottonbro-studio-6551710.jpg");}
+100%{background-image: url("flavor/ice&people/pexels-polina-tankilevitch-8217384.jpg");}
+}
+
+.sliders{
+text-align: center;
+}
+.others{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+.qr{
+display: flex;
+}
+.club{
+background-color: rgb(223, 62, 89);
+width:100%;
+height:140px;
+}
+.order{
+background-color: rgb(62, 116, 223);
+width:100%;
+height:140px;
+}
+footer{
+display: block;
+background-color: rgb(0, 0, 0);
+padding-bottom:8px;
+position: sticky;
+width: 100%;
+box-sizing: border-box;
+}
+
+footer i{
+justify-content: space-between;
+padding-left:45px;
+color: rgb(41, 22, 104);
+}
+
+.sns_block{
+margin:53px auto 0;
+width:440px;
+}
+.linkblock{
+display:flex;
+width:1022px;
+margin:55px auto 0;
+}
+.link-innerblock{
+width:339.333%;
+border-left:1px solid #3b3b3b;
+border-right:1px solid #3b3b3b;
+padding:2px 29px 0px;
+justify-content: center;
+text-align: center;
+}
+.link-innerblock a{
+text-align: left;
+color:rgb(231, 198, 105);
+text-decoration: none;
+display: block;
+}
+.maintitle{
+font-weight: bold;
+}
+.logo{
+font-family: 'Moon Dance';
+font-weight:bold;
+text-decoration: none;
+font-size: 62px;
+margin-top:-18px;
+
+
+}
+.logo a{
+color:rgb(43, 125, 226);
+
+
+}
+
+.titleblock{
+background-color: azure;
+position: relative;
+margin-top:-10px;
+height:71px;
+color:black;
+}
+
+.titleblock p{
+    font-size: 16px;
+    padding:13px 0;
+}
+
+
+
+
+.menu-content1 :hover{
+    color:rgb(34, 200, 178);
+    }
+    
+    .menu-content2{
+    width:200px;
+    height:70px;
+    position:absolute;
+    top:0;
+    right:-1px;
+    overflow:hidden;
+    }
+    
+    .menu-content2 a{
+    text-decoration: none;
+    font-family: 'Raleway';
+    color:rgb(110, 49, 19);
+    
+    }
+    .submenu1{
+    display: flex;
+    justify-content: center;
+    animation: sidewinder 2s ease;
+    
+    }
+    
+    @keyframes sidewinder{
+    0% {
+    opacity: 0;
+    }
+    
+    100%{
+    
+    }
+    }
+    .submenu1 :hover{
+    background-color: #610e0e;
+    transition: 0.5s all;
+    }
+    
+    
+    
+    .submenu1 a{
+    font-size: 75px;
+    text-decoration: none;
+    font-family: 'SF Distant Galaxy Alternate';
+    padding:5px 12px;
+    
+    transition: color 0.3s ease;
+    color:rgb(91, 209, 89);
+    animation: sidewinder2 2s ease;
+    }
+    @keyframes sidewinder2{
+    0% {
+    font-size:0vh;
+    }
+    
+    100%{
+    
+    }
+    }
+    
+    
+    
+    .submenu2{
+    display: flex;
+    width:90px;
+    height:70px;
+    margin-left: -20px;
+    
+    }
+    .submenu2 a{
+    padding:19px;
+    margin-top:4px;
+    width:110px;
+    transition: color 0.3s ease;
+    
+    
+    /*border: 1px solid;*/
+    }
+    .control-panel{
+    display: flex;
+    justify-content: center;
+    }
+    .page{
+    height:12px;
+    width:12px;
+    background-color: rgb(80, 40, 191);
+    border-radius:5px;
+    }
+    .newsb{
+    place-items: center;
+    }
+    .newsbox{ 
+    /*text-align: center;*/
+    font-family:'Zen Maru Gothic';
+    border-bottom:2px red dotted;
+    margin:0 305px 0 305px;
+    
+    justify-content: center;
+    }
+    .newsdate{
+    float: right;
+    margin-right: 9px;
+    }
+    h2,h3,h5{
+    
+    left:0px;
+    font-family:'Medodica';
+    text-align: center;
+    font-weight: lighter;
+    }
+    
+    .flavor-content2{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    /*background-color: rgb(248, 79, 169);*/
+    /*border: 5px rgb(220, 86, 182) ridge;*/
+    /*margin: 0 150px 0 150px;*/
+    padding: 26px 35px 40px 35px;
+    /*margin-top:15px;*/
+    
+    border-radius:7px;
+    /*height:260px;*/
+    }
+    #FlavorSlide{
+    
+    justify-content: center;
+    left:100px;
+    width:90%;
+    padding:0;
+    overflow: hidden;
+    }
+    .title_section{
+    background-size:cover;
+    
+    margin-top: 1px;
+    margin-bottom: 111px;
+    
+    }
+    .title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 135px;
+    margin-top:12px;
+    font-family: 'Moon Dance';
+    animation: appear 3s ease-in-out;
+    color:aliceblue;
+    }
+    .unseen{
+    width:100%;
+    height:80px;
+    }
+    @keyframes appear{
+    from{margin-top:150px;
+    opacity: 0;
+    color:white;}
+    to{top:0px;
+    } 
+    }
+    .storelinks{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width:800px;
+    margin: 53px auto 0;
+    }
+    .stores{
+    display: flex;
+    margin: 21px;
+    border-bottom:2px #610e0e dotted;
+    justify-content: center;
+    }
+    .storename{
+    padding:20px;
+    white-space: nowrap;
+    
+    }
+    .tel{
+    margin-left:32px;
+    padding:20px;
+    font-family:'Times New Roman', Times, serif;
+    white-space: nowrap;
+    }
+    .location{
+    margin-left: 102px;
+    font-size:20px;
+    text-align:center;
+    }
+    .detail{
+    margin-left: 102px;
+    text-decoration: none;
+    }
+    .subtitle{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color:aliceblue;
+    z-index: 1;
+    font-size: 19px;
+    margin-top:12px;
+    animation: appear2 3s ease-in-out;
+    white-space: nowrap;
+    }
+    
+    .flavors{
+    opacity: 0; 
+    }
+    
+    .flavors p{
+    font-weight: bolder;
+    }
+    
+    .othermenu{
+    display:flex;
+    justify-content: space-between;
+    }
+    
+    .othermenu a{
+    margin-left: 30px;
+    color:rgb(17, 69, 106); 
+    text-decoration: none;
+    }
+    .noholiday{
+    line-height:3px;
+    }
+    
+    @keyframes appear2{
+    from{margin-top:150px;
+    
+    color:white;}
+    to{bottom:0px;
+    color:aliceblue;
+    } 
+    }
+    
+    img{
+    width:250px;
+    height:200px;
+    object-fit: cover;
+    cursor: pointer;
+    
+    }
+    .flavor-content{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding-bottom:40px;
+    }
+    
+    .menu-btn{
+    color: #020202;
+    font-size: 41px;
+    cursor: pointer;
+    display: none;
+    /*animation:appear3 0.9s ease;*/
+    }
+    footer p{
+    text-align: center;
+    font-family:'Playball';
+    }
+    button{
+    
+    margin:3px 20px;
+    border: none;
+    }
+    button a{
+    text-decoration: none;
+    color:black;
+    margin:25px;
+    }
+    
+   .send{
+    justify-content: center;
+    background-color: rgb(245, 106, 36);
+    width:90%;
+    cursor:pointer;
+    border: 2px ridge  rgb(245, 106, 36);
+    padding: 0.75em;
+    margin:0;
+    }
+    @keyframes appear3{
+    0%{color: rgb(227, 206, 130);}
+    100%{color: #fff;}
+    }
+    #about p{
+    left:100px;
+    }
+    @media(max-width: 1100px){
+    .newsbox{
+    margin: 0 0px 0 0px;
+    padding: 26px 35px 40px 35px;
+    }
+    .flavor-content2{
+    padding: 0 10px 0 10px;
+    }
+    }
+    @media (max-width: 767px){
+    .menu-btn{
+    display: block;
+    z-index: 999;
+    position: absolute;
+    top:4px;
+    right: 11px;
+    transition: 0.5s all;
+    
+    }
+    
+    .menu-btn i.active::before{
+    content: "/f00d";
+    color:wheat;
+    }
+    
+    .menu-content1 {
+    color: rgb(227, 206, 130);
+    font-size:0vh;
+    transition: 0.3s ease;
+    margin-left: 1300px;
+    } 
+    /*.menu-content2 a{
+    color: rgb(227, 206, 130);
+    margin-left:112px;
+    font-size: 1vh;
+    transition: 0.3s ease;
+    }*/
+    .submenu1.another{
+    position:absolute;
+    height:auto;
+    background:rgb(97, 59, 19);
+    width: 100%;
+    top:20px;
+    left: 0px;
+    right:1px;
+    margin-left:1px;
+    transition: all .5s;
+    display: flex;
+    flex-direction:column;
+    animation: appear4 .5s ease;
+    }
+    
+    .submenu1 {
+    display:none;
+    }
+    
+    .submenu1 a{
+    position: relative;
+    right:0;
+    }
+    
+    .submenu1.another :hover{
+    background-color: bisque;
+    height:auto;
+    }
+    
+    @keyframes appear4{
+    0%{
+    position:absolute;
+    top:-500px;
+    right:0px;
+    }
+    100%{
+    position:absolute;
+    top:50px;
+    right:-1300px;
+    }
+    }
+    
+    .menu-content1 a.another{
+    font-size:27px;     
+    transition: .5s ease;
+    color: #18a1e6;
+    }
+    }
+    
+    input{
+    height:2.357rem;
+    border-radius: 5px;
+    margin-bottom:0.00em;
+    }
+    
+    label{
+    display:flex;
+    align-items: center;
+    
+    }
+    
+    .form-arrange{
+    width:90%;
+    padding-bottom:0.75em;
+    }
+    
+    .column a {
+    position: relative;
+    text-decoration: none;
+    bottom: 0.7vw;
+    font-weight: 600;
+    color:rgb(252, 167, 239);
+    font-size: 16px;
+    }
+    
+    form{
+    width:100%;
+    /*padding: 2.5rem 0.625rem;
+    border: 10px inset rgb(193, 197, 225);
+    border-radius: 5px;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    }
+    
+    .profile-block{
+        
+        text-align: center;
+        margin:0 7vw;
+    }
+    
+    .profile-block p{
+        margin-bottom:10px;
+    }
+    
+    .formblock{
+        display: flex;
+        padding-bottom:20px;
+    }
+    
+    .form-adjust{
+    width:100%;
+    }
+    
+    #loading{
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    }
+    
+    #loading.loadcomplete{
+    visibility: hidden;
+    opacity:0;
+    }
+    
+    .fadein{
+    border:1px solid black;
+    margin:10px;
+    animation: infade .5s ease;
+    }@keyframes infade{
+    0%{opacity:0;margin-top: -3px;}
+    50%{opacity:0.5}
+    100%{opacity:1}
+    }
+    
+    #welcome-text{
+    
+    font-weight: 900;
+    transition: 1.75s all;
+    font-size: 76px;
+    animation: infade 2.25s ease-in-out;
+    }
+    
+    #portfolio p{
+    text-align: center;
+    }
+    
+    .mypro {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    padding:10px 0;
+    background-color: rgba(14, 199, 119, 0.5);
+    border: 6px outset rgba(5, 255, 147, 0.833);
+    }
+    
+    .mypro p:nth-child(3){
+        margin-top:20px;
+    }
+    
+    .message{
+    padding:15px;
+    text-align: center;
+    }
+    
+    #addition a{
+        color:rgb(252, 167, 239);
+    }
+    
+    h2{
+    margin: 22px 22px 0 22px;
+    font-size:32px;
+    }
+    
+    
+    .modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 19; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    padding-bottom: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    
+    }
+    
+    .modal-content{
+    margin:auto;
+    background-color: #fefefe;
+    display: block;
+    padding: 0;
+    border: 1px solid #888;
+    width: auto;
+    height:100%;
+    }
+    
+    .close {
+    color: #aaaaaa;
+    position:absolute;
+    top:0px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    @media(max-width:1600px){
+        .submenu1 a{
+            font-size:50px;
+        }
+    }
+
+    
+    @media(max-width:1280px){
+    .submenu1 a{
+        font-size:45px;
+    }
+    }
