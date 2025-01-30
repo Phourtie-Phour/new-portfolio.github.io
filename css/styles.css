@@ -309,7 +309,7 @@ color:black;
     .submenu1{
     display: flex;
     justify-content: center;
-    animation: sidewinder 2s ease;
+    /*animation: sidewinder 2s ease;*/
     
     }
     
