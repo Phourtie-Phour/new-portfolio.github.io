@@ -752,7 +752,11 @@ color:black;
     
     #portfolio p{
     text-align: center;
-    line-height: 1.3em;
+    
+    }
+
+    #portfolio p,#profile p,#works p,#library p,#contact p{
+        line-height: 1.3em;
     }
     
     .mypro {
@@ -837,4 +841,5 @@ color:black;
         font-size:45px;
     }
     }
+
 
